@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <section>
+        <header id="header"><!-- Header que se repite en todas las páginas -->
+            <div id="logo">
+                <a href="/index.html"><img src="/assets/img/logobiblio.png" alt="Logo de la Biblioteca"></a>
+            </div>
+            <div id="menu">
+                <p><a href="/assets/pages/sobre-biblioteca.html">Sobre la Biblioteca</a></li>
+                <p><a href="/assets/pages/recursos.html">Recursos</a></li>
+                <p><a href="/assets/pages/servicios.html">Servicios</a></li>
+                <p><a href="/assets/pages/contacto.html">Contactate</a></li>
+            </div>
+        </header><!-- Fin header que se repite en todas las páginas -->
+    </section>
+    <section class="marginleft"><!-- Sección con margen izquierdo -->
+    <h1>Contactate con nosotros</h1>
+    <p>Rellená este formulario y nos comunicaremos con vos a la brevedad. </p>
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="name" name="nombre" required>
+        <br><br>
+        <label for="género">Género: </label>
+        <input type="radio" name="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="femenino" id="femenino">
+        <label for="femenino">Femenino</label>
+        <br><br>
+        <label for="nacimiento">Fecha de nacimiento: </label>
+        <input type="date" name="" id="">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="" id="">
+        <br><br>
+        <label for="tipo">Tipo de Consulta</label>
+        <select name="" id="">
+            <option value="bibliografia">Sobre bibliografía existente</option>
+            <option value="servicios">Sobre servicios</option>
+            <option value="otros">Otros asuntos</option>
+        </select>
+        <br><br>
+        <label for="mensaje">Mensaje:</label>
+        <input type="text area" name="mensaje" id="mensaje">
+        <br><br>
+        <label for="suscribirse">Deseo recibir el newsletter de la biblioteca</label>
+        <input type="checkbox" name="" id="">
+        <br><br>
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <br>
+    </section><!-- Fin sección con margen izquierdo -->
+    <footer>
+        <p><strong>Biblioteca Portal del Conocimiento</strong></p>
+        <p>Avda. Imperial 4375</p>
+        <p>Knowledge City</p>
+    </footer>
+</body>
+</html>

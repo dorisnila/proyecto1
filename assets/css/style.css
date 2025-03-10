@@ -1,0 +1,180 @@
+/* Header */
+#header {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 100px;
+    display: flex;
+    flex-flow: row no-wrap;
+    column-gap: 300px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+header li {
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Elementos del header */
+
+#logo {
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-around;
+    font-weight: 600;
+}
+/* Fin elementos del header */
+
+/* Div para imagen de fondo del home*/
+#home {
+    background-image: url("/assets/img/imagehome.png");
+    background-size: 100% 100%;
+    height: 400px;
+}
+
+/* Div para el texto de bienvenida */
+#welcometext {
+    width: 40%;
+    background-color: #ffffff ;
+    opacity: 0.8;
+    color: #A9A629 ;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 30;    
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.marginleft {
+    margin-left: 30px;
+}
+
+#vid-horarios {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-flow: row no-wrap;
+    gap: 100px;;
+}
+
+/* Div para horarios de atención */
+#horario {
+    background-color: #ffecb3;
+    border-radius: 5px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 6px 6px 6px #bebbbb;
+}
+
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a9a629;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 4px;
+    background-color: #f2f2f2 ;
+    border-top: dotted 1px;
+}
+
+table{
+    width: 50%;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+
+.container-plazos {
+    width: 70%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas:
+        "plazos plazos"
+        "libros librosplazo"
+        "revistas revplazo"
+        "comics comicplazo"
+        "nota nota";
+    grid-template-columns: 1fr 2fr;
+}
+
+.container-plazos > div {
+    border: solid 2px #AFAD62;
+    padding: 10px;
+}
+
+.container-plazos > div.plazos {
+    grid-area: plazos;
+    text-align: center;
+}
+
+.container-plazos > div.librosplazo {
+    grid-area: librosplazo;
+}
+
+.container-plazos > div.revistas {
+    grid-area: revistas;
+}
+
+.container-plazos > div.revplazo {
+    grid-area: revplazo;
+}
+
+.container-plazos > div.comics {
+    grid-area: comics;
+}
+
+.container-plazos > div.comicplazo {
+    grid-area: comicplazo;
+}
+
+.container-plazos > div.nota {
+    grid-area: nota;
+}
+
+
+
+
+
+
+/* Estilo del botón de Enviar */
+input[type=submit] {
+    background-color: #A9A629;
+    color: #ffffff;
+    border: solid 1px #a9a629;
+}
